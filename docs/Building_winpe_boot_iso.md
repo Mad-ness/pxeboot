@@ -13,8 +13,8 @@ Before it is possible to do something useful need to complete a few steps in adv
 ## Common prerequisites
 
 1. We need to have installed Windows 7. I'm running one in a KVM virtual machine.
-2. A Linux machine that is configured to run as a PXE server. I use for this an ARM board [Banana R1][http://www.banana-pi.org/r1.html].
-3. A running Samba service. I have another ARM based board [Cubieboard 2][http://cubieboard.org/].
+2. A Linux machine that is configured to run as a PXE server. I use for this an ARM board [Banana R1](http://www.banana-pi.org/r1.html).
+3. A running Samba service. I have another ARM based board [Cubieboard 2](http://cubieboard.org/) that's running it.
 
 Actually it doesn't matter where and how you running the services they just should be avaiable. It is considered that all required PXE services and Samba are already configured and running so once you boot a PC over network it gets booting PXE boot menu. Here describes only the things related to Windows OS.
 
@@ -26,13 +26,13 @@ Actually it doesn't matter where and how you running the services they just shou
 
 ## Building WinPE ISO image
 
-*All in this chapter is a compilation of [Microsoft Technet's articles][https://technet.microsoft.com/en-us/library/dd799281(v=ws.10).aspx]*.
+*All in this chapter is a compilation of [Microsoft TechNet's articles][https://TechNet.microsoft.com/en-us/library/dd799281(v=ws.10).aspx]*.
 
-As of this step we'll work inside a special enviroment running by installed AIK. To go in, run as an administrator **Start -> Programs -> Microsoft Windows AIK -> Deployment Tools Image Manager **. This is a command shell like cmd.exe will be run within preconfigured environment variables.
+As of this step we'll work inside a special enviroment running by installed AIK. To go in, run as an administrator **Start -> Programs -> Microsoft Windows AIK -> Deployment Tools Image Manager**. This is a command shell like cmd.exe will be run within preconfigured environment variables.
 
 ### Set up a Windows PE build environment
 
-MS Technet article [here][https://technet.microsoft.com/en-us/library/dd799303(v=ws.10).aspx].
+MS TechNet article [here](https://TechNet.microsoft.com/en-us/library/dd799303(v=ws.10).aspx).
 
 
 Initialization of a working directory
@@ -88,7 +88,7 @@ When you have finished all preparations and customizations you will want to have
 
 	oscdimg -n -bC:\winpe_amd64\etfsboot.com C:\winpe_amd64\ISO C:\winpe_amd64\winpe_amd64.iso
 
-If do nothing and just built a bare ISO image its size around 170 MB.
+If do nothing and just built a bare ISO image it gets size around 170 MB.
 
 Since now this lightweight ISO image can be burnt on a blank CD/DVD disc. But I haven't been using CD/DVD disc for a long time at all and will use the ISO image for loading it via PXE.
 
