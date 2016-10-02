@@ -26,7 +26,7 @@ Actually it doesn't matter where and how you running the services they just shou
 
 ## Building WinPE ISO image
 
-*All in this chapter is a compilation of [Microsoft TechNet's articles][https://TechNet.microsoft.com/en-us/library/dd799281(v=ws.10).aspx]*.
+*All in this chapter is a compilation of [Microsoft TechNet's articles](https://TechNet.microsoft.com/en-us/library/dd799281(v=ws.10).aspx)*.
 
 As of this step we'll work inside a special enviroment running by installed AIK. To go in, run as an administrator **Start -> Programs -> Microsoft Windows AIK -> Deployment Tools Image Manager**. This is a command shell like cmd.exe will be run within preconfigured environment variables.
 
